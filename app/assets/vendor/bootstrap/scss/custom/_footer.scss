@@ -1,0 +1,228 @@
+#in_touch{
+	padding-top: 64px;
+	.sub_title{
+		padding-bottom: 84px;
+	}
+}
+#map{
+	position: relative;
+	&:before{
+		height: 100%;
+		width: 100%;
+		content: '';
+		background: rgba(68,68,68, 0.7);
+		position: absolute;
+		top: 0px;
+		left: 0px;
+	}
+	.footer_top{
+		background: rgba(68,68,68, 0.8);
+		padding: 60px 80px;
+		flex-wrap: wrap;
+		@media(max-width: 1024px){
+			padding: 30px 20px;
+		}
+		form{
+			width: 65%;
+			padding-right: 50px;
+			@media(max-width: 1024px){
+				padding-right: 10px;
+			}
+			@media(max-width: 767px){
+				width: 100%;
+				padding-right: 0px;
+			}
+		}
+		.contact{
+			width: 35%;
+			padding-left: 50px;
+			@media(max-width: 1024px){
+				padding-left: 10px;
+			}
+			@media(max-width: 767px){
+				width: 100%;
+				padding-left: 0px;
+				padding-top: 20px;
+			    display: flex;
+			    justify-content: space-between;
+			}
+			@media(max-width: 600px){
+			   flex-wrap: wrap;
+			    justify-content: space-around;
+			}
+		}
+	}
+	.form_container{
+		position:absolute;
+		top: 50%;
+		left: 50%;
+		z-index: 3;
+		transform: translate(-50%,-50%);
+	}
+	.address, .phone a, .mail a{
+		font-size: 16px;
+		color:#f3f3f3;
+		max-width: 190px;
+	}
+	.address{
+		padding-bottom: 30px;
+		@media(max-width: 600px){
+		    max-width: 100%;
+		}
+	}
+	.phone{
+		padding-bottom: 30px;
+	}
+	.form{
+		input{
+			width: calc(50% - 5px);
+			font-size: 16px;
+			margin-right: 6px;
+			color: #373737;
+			border: 1px solid #b7b7b7;
+			background: none;
+			outline: none;
+			padding: 12px 20px 12px 20px;
+			@media(max-width: 767px){
+				width: 100%;
+				margin-right: 0px;
+				margin-bottom: 10px;
+			}
+		}
+		.select{
+			position:relative;
+			width: calc(50% - 5px);
+			float: right;
+			@media(max-width: 767px){
+				width: 100%;
+			}
+		}
+		select{
+			border: 1px solid #b7b7b7;
+			background: none;
+			color: #b7b7b7;
+			font-size: 16px;
+			outline: none;
+			padding: 12px 20px 12px 20px;
+			-webkit-appearance: none;
+    		-moz-appearance: none;
+    		width: 100%;
+			option{
+				font-size: 16px;
+				color: #373737;
+			}
+		}
+		textarea{
+			margin-top: 10px;
+			width: 100%;
+			font-size: 16px;
+			border: 1px solid #b7b7b7;
+			background: none;
+			outline: none;
+			color: #373737;
+			padding: 10px 20px 13px 20px
+		}
+		.chatbox{
+			padding-top: 15px;
+			width: 50%;
+			float: left;
+			input{
+				width: 50px;
+				outline: none;
+			}
+			label{
+				font-size: 16px;
+				color: #b7b7b7;
+			}
+		}
+		button{
+			margin-top: 5px;
+			float: right;
+			outline: none;
+			border: none;
+			background: #ffff00;
+			font-size: 16px;
+			padding: 13px 42px;
+			cursor: pointer;
+		}
+	}
+	input::placeholder {
+	  color: #b7b7b7;
+	}
+	textarea::placeholder {
+	  color: #b7b7b7;
+	}
+}
+.footer{
+	padding: 18px 30px;
+	background: #1a1a1a;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	@media(max-width: 767px){
+		justify-content: center;
+	}
+	p{
+		color: #7a7a7a;
+		@media(max-width: 767px){
+			width: 100%;
+			text-align: center;
+		}
+	}
+	.networks{
+		display: flex;
+    	justify-content: flex-end;
+    	@media(max-width: 767px){
+    		width: 100%;
+		    justify-content: center;
+		    padding-top: 10px;
+    	}
+    	li{
+    		padding-left: 30px;
+    	}
+    	.facebook{
+    		color: #6782b2;
+    	}
+    	.google{
+    		color: #cf604b;
+    	}
+    	.twitter{
+    		color: #71d6fa;
+    	}
+    	.dribbble{
+    		color: #f77f9f;
+    	}
+	}
+	li a .fa {
+	    -webkit-transition: -webkit-transform 1s ease;
+	    transition: -webkit-transform 1s ease;
+	    -o-transition: transform 1s ease;
+	    transition: transform 1s ease;
+	    transition: transform 1s ease,-webkit-transform 1s ease;
+	}
+	li a:hover .fa {
+	    transform: rotateY(360deg);
+	}
+}
+input[type=checkbox], input[type=radio] {display: none;}
+
+input[type=checkbox] + label:before {
+    content: "\2713";
+    color: transparent;
+    display: inline-block;
+    border: 1px solid #b7b7b7;
+    font-size: 16px;    
+    line-height: 22px;
+    margin: -1px 5px 0 0;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    vertical-align: middle;
+    transition: color ease .3s;
+    line-height: 1;
+}
+
+input[type=checkbox]:checked + label:before {
+    color: #b7b7b7;
+}
+

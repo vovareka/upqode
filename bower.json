@@ -1,0 +1,18 @@
+{
+  "name": "NewProject",
+  "description": "NewProject",
+  "main": "index.html",
+  "authors": [
+    "BohdanHnedko"
+  ],
+  "license": "ISC",
+  "homepage": "index.php",
+  "devDependencies": {
+    "jquery": "^3.2.1",
+  },
+  "resolutions": {
+    "jquery": "^3.2.1"
+  },
+  "dependencies": {
+  }
+}

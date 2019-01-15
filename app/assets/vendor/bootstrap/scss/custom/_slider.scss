@@ -1,0 +1,215 @@
+.main_banner_container {
+	position: relative;
+	z-index: 10;
+	height: 100%;
+    width: 100%;
+}
+.main_banner {
+	width: 100%;
+	height: calc(100vh - 70px);
+	background:url("../../img/main_banner_bg.jpg");
+	background-size: cover;
+	position:relative;
+	overflow: hidden;
+	top: 70px;
+	&:before {
+		content:'';
+		background-image: linear-gradient(-71deg, #503392 0%, #673ab7 49%, #00bff3 100%);
+		width: 100%;
+		height: calc(100vh - 70px);
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		z-index: 4;
+		opacity: 0.8;
+	}
+	.title {
+		text-align: center;
+		font-size: 64px;
+		text-transform: uppercase;
+		color:$white;
+		padding: 0px 15px;
+		span {
+			color:$yellow;
+			line-height: 1;
+		}
+		@media(max-width: 450px){
+			font-size: 45px;
+		}
+	}
+	.swiper-slide {
+    	align-items: center;
+    	justify-content: center;
+	}
+	.text {
+		padding-top: 24px;
+		padding: 0px 15px;
+		max-width: 720px;
+		text-align: center;
+		margin: 0 auto;
+	}
+	.main_banner_button {
+		background: rgba(255, 255, 255, 0.2);
+		background-image: none;
+		width: 60px;
+		height: 60px;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		z-index: 5;
+		cursor: pointer;
+		@media(max-width: 1024px){
+		    display: none;
+		}
+		&:hover{
+			background: rgba(255, 255, 255, 0.3);
+		}
+		&:after{ 
+		    font-family: FontAwesome;
+		    font-size: 18px;
+		    position: absolute;
+		    top: 50%;
+		    left: 50%;
+		    transform: translate(-50%,-50%);
+		    color: $white;
+		}
+	}
+	.main_banner_prev{
+		left: 30px;
+		&:after{
+			content: "\f104"; 
+		}
+	}
+	.main_banner_next{
+		right: 30px;
+		&:after{
+			content: "\f105";  
+		}
+	}
+}
+.main_banner_pagination {
+	bottom: 40px!important;
+	position: absolute;
+    text-align: center;
+    z-index: 5;
+	cursor: pointer;
+	.swiper-pagination-bullet-active{
+		background-color: #ffffff;
+	}
+}
+.swiper-pagination-bullet{
+	width: 8px;
+	height: 7px;
+	background-color: #b7b7b7;
+}
+
+/*our poroducts*/
+.our_product_pagination{
+	text-align: center;
+	.swiper-pagination-bullet-active{
+		background-color: #503392;
+	}
+}
+.our_product_item{
+	margin-bottom: 90px;
+}
+.product_icon{
+	width: 140px;
+	height: 140px;
+	border-radius: 100%;
+}
+.product_container{
+	align-items: center;
+	@media(max-width: 1100px){
+		justify-content: center;
+	}
+	.product_title{
+		font-size: 14px;
+		color: #232323;
+		font-weight: 900;
+		text-transform: uppercase;
+	}
+	.product_text{
+		font-size: 14px;
+		color: #373737;
+		font-weight: 300;
+		padding-top: 10px;
+		max-height: 50px;
+    	overflow: hidden;
+	}
+	.product_sub_title{
+		font-size: 16px;
+		color: #503392;
+	}
+	.product_content {
+		max-width: 200px;
+    	padding-left: 30px;
+    	@media(max-width: 1100px){
+			max-width: 150px;
+    		padding-left: 15px;
+		}
+	}
+}
+.our_product{
+	padding-top: 160px;
+}
+.our_product_first{
+	.product_icon{
+		background:url("../../img/product(1).jpg");
+		background-position: 30% 90%;
+	}
+}
+.our_product_second{
+	.product_icon{
+		background:url("../../img/product(4).jpg");
+		background-position: 60% 40%;
+	}
+}
+.our_product_third{
+	.product_icon{
+		background:url("../../img/product(2).jpg");
+		background-position: 42% 80%;
+	}
+}
+.our_product_fourth{
+	.product_icon{
+		background:url("../../img/product(5).jpg");
+		background-position: 64% 66%;
+	}
+}
+.our_product_fifth{
+	.product_icon{
+		background:url("../../img/product(3).jpg");
+		background-position: 87% 55%;
+	}
+}
+.our_product_sixth{
+	.product_icon{
+		background:url("../../img/product(6).jpg");
+		background-position: 25% 88%;
+	}
+}
+.our_product_seventh{
+	.product_icon{
+		background:url("../../img/product(1).jpg");
+		background-position: 30% 90%;
+	}
+}
+.our_product_eight{
+	.product_icon{
+		background:url("../../img/product(4).jpg");
+		background-position: 60% 40%;
+	}
+}
+.our_product_nineth{
+	.product_icon{
+		background:url("../../img/product(2).jpg");
+		background-position: 42% 80%;
+	}
+}
+.our_product_tenth{
+	.product_icon{
+		background:url("../../img/product(5).jpg");
+		background-position: 64% 66%;
+	}
+}
